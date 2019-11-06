@@ -9,5 +9,6 @@ Procedure:
 4. Make sure to import database
 5. Connect database with proper credentials
 6. Run the project
+7. Username: excelit, Password: excelit
 
 Demo: http://apptest.byethost14.com/excel_qa

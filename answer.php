@@ -58,39 +58,12 @@ if(!empty($_SESSION['username123']))
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-datetimepicker.min.css" />
      
     <script type="text/javascript" src="js/jquery.min.js"></script>
-
-    <script type="text/javascript">
-                             $(function () {
-                                $('#datetimepicker1').datetimepicker();
-                            });
-                              $(function () {
-                                $('#datetimepicker2').datetimepicker();
-                            });
-
-                        </script>
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Excel IT</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li ><a href="dashboard.php">Questions</a></li>
-              <li class="active"><a href="answer.php">Answer</a></li>
-              <li><a href="list.php">Winner List</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+    <?php include('header.php') ?>
 
     <div class="container">
       <?php

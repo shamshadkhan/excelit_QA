@@ -60,42 +60,20 @@ if(!empty($_SESSION['username123']))
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-datetimepicker.min.css" />
      
     <script type="text/javascript" src="js/jquery.min.js"></script>
-
+    <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
-                             $(function () {
-                                $('#datetimepicker1').datetimepicker();
-                            });
-                              $(function () {
-                                $('#datetimepicker2').datetimepicker();
-                            });
-
-                        </script>
+       $(function () {
+          $('#datetimepicker1').datetimepicker();
+      });
+        $(function () {
+          $('#datetimepicker2').datetimepicker();
+      });
+    </script>
 </head>
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Excel IT</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li ><a href="dashboard.php">Questions</a></li>
-              <li ><a href="answer.php">Answer</a></li>
-              <li><a href="list.php">Winner List</a></li>
-            </ul>
-            <form class="navbar-form pull-right">
-              <a href="index.php" class="btn">Sign Out</a>
-            </form>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+    <?php include('header.php') ?>
 
     <div class="container">
       <?php
@@ -130,30 +108,25 @@ if(!empty($_SESSION['username123']))
             </div>
             <div class="span6">
               <label>Start Date</label>
-                                <div class="input-group date" id="datetimepicker1">
-                                    <input type="text" class="span6" name="startdate">
-                                    <i class="icon-calendar" style="float: right;margin-top: -35px;margin-right: -21px;"></i>
-                                    <span class="input-group-addon" style="opacity:0"><span class="glyphicon-calendar glyphicon" style="float: right;margin-top: -35px;margin-right: -21px;"></span>
-                                    </span>
-                                </div>
-                            </div>
-               <div class="span6">
+              <div class="input-group date" id="datetimepicker1">
+                  <input type="text" class="span6" name="startdate">
+                  <i class="icon-calendar" style="float: right;margin-top: -35px;margin-right: -21px;"></i>
+                  <span class="input-group-addon" style="opacity:0"><span class="glyphicon-calendar glyphicon" style="float: right;margin-top: -35px;margin-right: -21px;"></span>
+                  </span>
+              </div>
+            </div>
+            <div class="span6">
               <label>End Date</label>
-                                <div class="input-group date" id="datetimepicker2">
-                                    <input type="text" class="span6" name="enddate">
-                                    <i class="icon-calendar" style="float: right;margin-top: -35px;margin-right: -21px;"></i>
-                                    <span class="input-group-addon" style="opacity:0"><span class="glyphicon-calendar glyphicon" style="float: right;margin-top: -35px;margin-right: -21px;"></span>
-                                    </span>
-                                </div>
-                            </div>
-                     
-                
+              <div class="input-group date" id="datetimepicker2">
+                  <input type="text" class="span6" name="enddate">
+                  <i class="icon-calendar" style="float: right;margin-top: -35px;margin-right: -21px;"></i>
+                  <span class="input-group-addon" style="opacity:0"><span class="glyphicon-calendar glyphicon" style="float: right;margin-top: -35px;margin-right: -21px;"></span>
+                  </span>
+              </div>
+            </div>
             <div class="span12">
               <button type="submit" class="btn" name="save">Submit</button>
-            
             </div>
-         
-        
          </form>
       </div>
 
